@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>How to Start a Nonprofit in Kentucky - Checklist & Quiz</title>
+    <title>How to Start a Nonprofit in Kentucky - Checklist and Quiz</title>
 </head>
-<body style="background-color: #f4f6f9; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<body style="background-color: #f4f6f9; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, \x27Segoe UI\x27, Roboto, sans-serif;">
 
   <div style="max-width: 450px; width: 90%; background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px;">
     <h1 style="color: #1e293b; font-size: 22px; margin-top: 0; text-align: center;">Starting a Nonprofit in Kentucky</h1>
@@ -14,7 +14,7 @@
   <div id="quiz-box" style="max-width: 450px; width: 90%; padding: 30px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
     <div id="quiz-content">
       <h2 style="color: #1e293b; margin-top: 0;">Is Your Kentucky Idea Ready?</h2>
-      <p style="color: #64748b; font-size: 15px; margin-bottom: 25px;">Take our 60-second compliance readiness quiz to see if you're ready to submit to the state.</p>
+      <p style="color: #64748b; font-size: 15px; margin-bottom: 25px;">Take our 60-second compliance readiness quiz to see if you\x27re ready to submit to the state.</p>
       
       <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 25px;">
         <p id="question-text" style="color: #334155; font-size: 16px; font-weight: 600; margin: 0; line-height: 1.5;">Question 1: Do you have at least 3 board members ready to join?</p>
@@ -32,8 +32,8 @@
 
     const questions = [
       "Do you have at least 3 board members ready to join?",
-      "Have you drafted your nonprofit's official Bylaws yet?",
-      "Do you know your state's exact corporate filing fee?",
+      "Have you drafted your nonprofit\x27s official Bylaws yet?",
+      "Do you know your state\x27s exact corporate filing fee?",
       "Do you have a clear, 1-sentence charitable mission statement?",
       "Are you ready to tackle the IRS Form 1023 paperwork?"
     ];
@@ -45,8 +45,8 @@
         document.getElementById("question-text").innerText = "Question " + currentQuestion + ": " + questions[currentQuestion - 1];
       } else {
         document.getElementById("quiz-content").innerHTML = `
-          <h2 style="color: #1e293b; margin-top: 0;">🎉 Quiz Complete!</h2>
-          <p style="color: #64748b; font-size: 14px; line-height:1.5;">Enter your primary email address below to see your custom calculation score and instantly receive your free <b>"What Not to Paste Into AI"</b> Safety Guide PDF.</p>
+          <h2 style="color: #1e293b; margin-top: 0;">ðŸŽ‰ Quiz Complete!</h2>
+          <p style="color: #64748b; font-size: 14px; line-height:1.5;">Enter your primary email address below to see your custom calculation score and instantly receive your free <b>\"What Not to Paste Into AI\"</b> Safety Guide PDF.</p>
           <input type="email" id="user-email" placeholder="Enter your email address" required style="width: 85%; padding: 12px; margin-top: 10px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 15px; outline: none;">
           <br>
           <button onclick="submitQuiz()" style="background-color: #16a34a; color: white; border: none; padding: 14px 0; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 90%;">Get My Results & Free PDF</button>
@@ -54,11 +54,10 @@
       }
     }
 
-    // (Kept short for brevity, your backend function remains the same)
     function submitQuiz() {
       const emailInput = document.getElementById("user-email").value;
-      if(!emailInput || !emailInput.includes('@')) return alert("Please enter a valid email address!");
-      document.getElementById("quiz-content").innerHTML = '<p style="color: #2563eb; font-weight: bold; font-size: 16px;">Calculating your configuration analytics...</p>';
+      if(!emailInput || !emailInput.includes(\x27@\x27)) return alert("Please enter a valid email address!");
+      document.getElementById("quiz-content").innerHTML = \x27<p style="color: #2563eb; font-weight: bold; font-size: 16px;">Calculating your configuration analytics...</p>\x27;
       fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
         mode: "no-cors", 
@@ -66,7 +65,7 @@
         body: JSON.stringify({ email: emailInput, score: currentScore })
       }).then(() => {
         document.getElementById("quiz-content").innerHTML = `
-          <h2 style="color: #16a34a; margin-top: 0;">🚀 Fly into Your Inbox!</h2>
+          <h2 style="color: #16a34a; margin-top: 0;">ðŸš€ Fly into Your Inbox!</h2>
           <p style="color: #334155; font-size: 16px; font-weight: 600;">Your data successfully saved.</p>
           <p style="color: #64748b; font-size: 14px; line-height: 1.5; margin-bottom: 20px;">We just triggered an automatic delivery email containing your custom score breakdown and your copy of the <b>AI Security & Privacy Toolkit</b>.</p>
         `;
