@@ -1,256 +1,110 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>How to Start a Nonprofit in Idaho | RunYourAI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thinking about starting a nonprofit in  Take this quick nonprofit startup readiness quiz and get your free AI safety guide for nonprofit founders.">
+  <meta name="description" content="State-specific nonprofit startup checklist for Idaho: filing office, formation paperwork, registered agent, board readiness, IRS 501(c)(3) planning, and compliance reminders.">
   <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f4f6f9;
-      color: #1e293b;
-      line-height: 1.6;
-    }
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 30px 16px;
-    }
-    .hero {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 34px;
-      box-shadow: 0 6px 22px rgba(15, 23, 42, 0.08);
-      margin-bottom: 24px;
-      text-align: center;
-    }
-    .hero h1 {
-      margin-top: 0;
-      font-size: 34px;
-      line-height: 1.15;
-      color: #0f172a;
-    }
-    .hero p {
-      color: #475569;
-      font-size: 17px;
-      max-width: 720px;
-      margin: 14px auto;
-    }
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-    .info-card {
-      background: #ffffff;
-      border-radius: 14px;
-      padding: 20px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
-    }
-    .info-card h3 {
-      margin-top: 0;
-      color: #2563eb;
-      font-size: 17px;
-    }
-    .quiz-box {
-      background: #ffffff;
-      max-width: 520px;
-      margin: 0 auto 26px auto;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 6px 22px rgba(15, 23, 42, 0.08);
-      text-align: center;
-    }
-    .question-card {
-      background-color: #f8fafc;
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #e2e8f0;
-      margin-bottom: 24px;
-    }
-    button {
-      border: none;
-      padding: 13px 24px;
-      font-size: 15px;
-      font-weight: 700;
-      border-radius: 8px;
-      cursor: pointer;
-      margin: 6px;
-    }
-    .yes-btn {
-      background: #2563eb;
-      color: white;
-      width: 145px;
-    }
-    .no-btn {
-      background: #e2e8f0;
-      color: #475569;
-      width: 145px;
-    }
-    .submit-btn {
-      background: #16a34a;
-      color: white;
-      width: 92%;
-      padding: 15px 0;
-      box-shadow: 0 4px 8px rgba(22, 163, 74, 0.2);
-    }
-    input[type="email"] {
-      width: 86%;
-      padding: 13px;
-      margin: 10px 0 16px 0;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 15px;
-    }
-    .small-note {
-      color: #64748b;
-      font-size: 13px;
-      margin-top: 14px;
-    }
-    .footer {
-      text-align: center;
-      color: #64748b;
-      font-size: 13px;
-      padding: 20px 0;
-    }
-    a {
-      color: #2563eb;
-    }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; background:#f4f6f9; color:#1e293b; line-height:1.6; }
+    .page { max-width:960px; margin:0 auto; padding:30px 16px; }
+    .hero,.quiz-box,.state-summary { background:#fff; border-radius:18px; box-shadow:0 6px 22px rgba(15,23,42,.08); }
+    .hero { padding:34px; margin-bottom:24px; text-align:center; }
+    .hero h1 { margin-top:0; font-size:34px; line-height:1.15; color:#0f172a; }
+    .hero p { color:#475569; font-size:17px; max-width:720px; margin:14px auto; }
+    .state-summary { max-width:720px; margin:0 auto 24px auto; padding:28px; }
+    .state-summary h2 { text-align:center; margin-top:0; color:#0f172a; font-size:27px; }
+    .state-summary p { color:#475569; font-size:16px; }
+    .facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:18px; }
+    .fact { background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px; }
+    .fact strong { display:block; color:#2563eb; margin-bottom:6px; }
+    .info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-bottom:24px; }
+    .info-card { background:#fff; border-radius:14px; padding:20px; border:1px solid #e2e8f0; box-shadow:0 3px 12px rgba(15,23,42,.04); }
+    .info-card h3 { margin-top:0; color:#2563eb; font-size:17px; }
+    .quiz-box { max-width:560px; margin:0 auto 26px auto; padding:30px; text-align:center; }
+    .question-card { background-color:#f8fafc; padding:20px; border-radius:10px; border:1px solid #e2e8f0; margin-bottom:24px; }
+    button { border:none; padding:13px 24px; font-size:15px; font-weight:700; border-radius:8px; cursor:pointer; margin:6px; }
+    .yes-btn { background:#2563eb; color:white; width:145px; }
+    .no-btn { background:#e2e8f0; color:#475569; width:145px; }
+    .submit-btn { background:#16a34a; color:white; width:92%; padding:15px 0; box-shadow:0 4px 8px rgba(22,163,74,.2); }
+    input[type="email"] { width:86%; padding:13px; margin:10px 0 16px 0; border:1px solid #cbd5e1; border-radius:8px; font-size:15px; }
+    .small-note,.disclaimer { color:#64748b; font-size:13px; margin-top:14px; }
+    .footer { text-align:center; color:#64748b; font-size:13px; padding:20px 0; }
+    a { color:#2563eb; }
   </style>
 </head>
 <body>
   <main class="page">
     <section class="hero">
       <h1>How to Start a Nonprofit in Idaho</h1>
-      <p>
-        Starting a nonprofit in Idaho takes more than a good idea.
-        You need a clear mission, a board, startup documents, IRS planning, and a realistic launch path.
-      </p>
-      <p>
-        Take this quick 5-question readiness quiz and get your score, plus a free AI safety guide for nonprofit founders.
-      </p>
+      <p>Starting a nonprofit in Idaho takes more than a good idea. You need formation paperwork, a registered agent, a board/director structure, bylaws, IRS planning, and a realistic launch path.</p>
+      <p>Take this quick 5-question readiness quiz and get your score, plus a free AI safety guide for nonprofit founders.</p>
+    </section>
+
+    <section class="state-summary">
+      <h2>Starting a Nonprofit in Idaho</h2>
+      <p>If you are launching a 501(c)(3) organization in Idaho, your first state-level formation step is usually filing nonprofit formation paperwork with <a href="https://sosbiz.idaho.gov/" target="_blank" rel="noopener">Idaho Secretary of State – Business Services</a>. Confirm the current form name, filing fee, registered agent requirements, and annual report rules before submitting anything official.</p>
+      <div class="facts">
+        <div class="fact"><strong>State Filing Office</strong><a href="https://sosbiz.idaho.gov/" target="_blank" rel="noopener">Idaho Secretary of State – Business Services</a></div>
+        <div class="fact"><strong>Formation Filing</strong>File nonprofit articles/certificate of incorporation or the state equivalent for a nonprofit corporation.</div>
+        <div class="fact"><strong>Fee Check</strong>Check the Idaho filing office before submitting. Fees, form names, and filing systems can change. See the <a href="https://sosbiz.idaho.gov/" target="_blank" rel="noopener">official fee / filing page</a>.</div>
+        <div class="fact"><strong>Board Readiness</strong>Have your initial directors/board roles, bylaws, conflict policy, and basic meeting records ready before launch.</div>
+        <div class="fact"><strong>IRS Step</strong>After state formation, apply for an EIN and plan your IRS Form 1023 or 1023-EZ filing if seeking 501(c)(3) recognition.</div>
+        <div class="fact"><strong>Ongoing Compliance</strong>After formation, most nonprofits should calendar state annual or periodic reports, IRS 990-series filings, and any charitable solicitation registration that applies before fundraising.</div>
+      </div>
+      <p class="disclaimer">Educational checklist only. This is not legal or tax advice. State fees and rules change, so always verify on the official state website before filing.</p>
     </section>
 
     <section class="info-grid">
-      <div class="info-card">
-        <h3>Idaho Startup Focus</h3>
-        <p>
-          This page is built for founders researching nonprofit startup steps in Idaho.
-          Use it as a planning starting point before filing anything official.
-        </p>
-      </div>
-      <div class="info-card">
-        <h3>Board Readiness</h3>
-        <p>
-          Most new nonprofits should prepare for a real board structure, clear roles, and basic governance documents before launching.
-        </p>
-      </div>
-      <div class="info-card">
-        <h3>Founder Safety Reminder</h3>
-        <p>
-          Be careful what you paste into AI tools. Avoid private donor details, passwords, tax IDs, personal addresses, and sensitive records.
-        </p>
-      </div>
+      <div class="info-card"><h3>Idaho Startup Focus</h3><p>This page is built for founders researching nonprofit startup steps in Idaho. Use it as a planning starting point before filing anything official.</p></div>
+      <div class="info-card"><h3>Board Readiness</h3><p>Most new nonprofits should prepare for a real board structure, clear roles, and basic governance documents before launching.</p></div>
+      <div class="info-card"><h3>Founder Safety Reminder</h3><p>Be careful what you paste into AI tools. Avoid private donor details, passwords, tax IDs, personal addresses, and sensitive records.</p></div>
     </section>
 
     <section class="quiz-box">
       <div id="quiz-content">
-        <h2 style="margin-top: 0;">Is Your Nonprofit Idea Ready to Launch?</h2>
-        <p style="color: #64748b; font-size: 15px;">
-          Take the 60-second baseline quiz to test your startup readiness.
-        </p>
-
-        <div class="question-card">
-          <p id="question-text" style="color: #334155; font-size: 16px; font-weight: 700; margin: 0;">
-            Question 1: Do you have at least 3 board members ready to help?
-          </p>
-        </div>
-
+        <h2 style="margin-top:0;">Is Your Idaho Idea Ready?</h2>
+        <p style="color:#64748b; font-size:15px;">Take the 60-second compliance readiness quiz to see if you are ready to submit to the state.</p>
+        <div class="question-card"><p id="question-text" style="color:#334155; font-size:16px; font-weight:700; margin:0;">Question 1: Do you have your initial board members or directors ready to join?</p></div>
         <button class="yes-btn" onclick="answerQuestion(1)">Yes</button>
         <button class="no-btn" onclick="answerQuestion(0)">No / Unsure</button>
       </div>
     </section>
 
-    <p class="footer">
-      RunYourAI helps founders use AI more carefully, clearly, and practically.
-      This page is educational and is not legal or tax advice.
-    </p>
+    <p class="footer">RunYourAI helps founders use AI more carefully, clearly, and practically. This page is educational and is not legal or tax advice.</p>
   </main>
 
   <script>
     let currentScore = 0;
     let currentQuestion = 1;
-
     const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzqOO_K10Kgj11LX08bZ_WjNDtZLCez6UX5wlV1eeDE6v51tApdG5oQ2SzEFM8bvObQSw/exec";
     const STATE_NAME = "Idaho";
     const SOURCE_PAGE = "idaho.html";
-
     const questions = [
-      "Do you have at least 3 board members ready to help?",
+      "Do you have your initial board members or directors ready to join?",
       "Have you drafted basic nonprofit bylaws yet?",
-      "Do you know where your state nonprofit filing will be submitted?",
+      "Have you checked the official Idaho filing office for the correct nonprofit form and current fee?",
       "Do you have a clear one-sentence charitable mission statement?",
       "Are you ready to prepare IRS exemption paperwork or get help with it?"
     ];
-
     function answerQuestion(points) {
       currentScore += points;
       currentQuestion++;
-
       if (currentQuestion <= questions.length) {
-        document.getElementById("question-text").innerText =
-          "Question " + currentQuestion + ": " + questions[currentQuestion - 1];
+        document.getElementById("question-text").innerText = "Question " + currentQuestion + ": " + questions[currentQuestion - 1];
       } else {
-        document.getElementById("quiz-content").innerHTML =
-          '<h2 style="margin-top: 0;">Quiz Complete!</h2>' +
-          '<p style="color: #64748b; font-size: 14px;">Enter your email to receive your score and your free <b>"What Not to Paste Into AI"</b> Safety Guide PDF.</p>' +
-          '<input type="email" id="user-email" placeholder="Enter your email address" required>' +
-          '<br>' +
-          '<button class="submit-btn" onclick="submitQuiz()">Get My Results & Free PDF</button>' +
-          '<p class="small-note">We will send your result and guide by email. You can unsubscribe or ignore future messages anytime.</p>';
+        document.getElementById("quiz-content").innerHTML = '<h2 style="margin-top: 0;">Quiz Complete!</h2>' + '<p style="color: #64748b; font-size: 14px;">Enter your email to receive your score and your free <b>"What Not to Paste Into AI"</b> Safety Guide PDF.</p>' + '<input type="email" id="user-email" placeholder="Enter your email address" required>' + '<br>' + '<button class="submit-btn" onclick="submitQuiz()">Get My Results & Free PDF</button>' + '<p class="small-note">We will send your result and guide by email. You can unsubscribe or ignore future messages anytime.</p>';
       }
     }
-
     function submitQuiz() {
       const emailInput = document.getElementById("user-email").value.trim();
-
-      if (!emailInput || !emailInput.includes("@")) {
-        alert("Please enter a valid email address.");
-        return;
-      }
-
-      document.getElementById("quiz-content").innerHTML =
-        '<p style="color: #2563eb; font-weight: bold; font-size: 16px;">Submitting your quiz...</p>';
-
+      if (!emailInput || !emailInput.includes("@")) { alert("Please enter a valid email address."); return; }
+      document.getElementById("quiz-content").innerHTML = '<p style="color: #2563eb; font-weight: bold; font-size: 16px;">Submitting your quiz...</p>';
       const formData = new URLSearchParams();
-      formData.append("email", emailInput);
-      formData.append("score", currentScore);
-      formData.append("state", STATE_NAME);
-      formData.append("sourcePage", SOURCE_PAGE);
-
-      fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
-        body: formData.toString()
-      })
-      .then(function() {
-        document.getElementById("quiz-content").innerHTML =
-          '<h2 style="color: #16a34a; margin-top: 0;">Check Your Inbox!</h2>' +
-          '<p style="color: #334155; font-size: 16px; font-weight: 600;">Your quiz was submitted.</p>' +
-          '<p style="color: #64748b; font-size: 14px;">Your score and free AI safety guide should arrive by email shortly. If you do not see it, check Spam, Promotions, or Updates.</p>';
-      })
-      .catch(function(error) {
-        document.getElementById("quiz-content").innerHTML =
-          '<h2 style="color: #dc2626; margin-top: 0;">Something went wrong</h2>' +
-          '<p>Please refresh the page and try again.</p>';
-      });
+      formData.append("email", emailInput); formData.append("score", currentScore); formData.append("state", STATE_NAME); formData.append("sourcePage", SOURCE_PAGE);
+      fetch(GOOGLE_SCRIPT_URL, { method:"POST", mode:"no-cors", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:formData.toString() })
+      .then(function() { document.getElementById("quiz-content").innerHTML = '<h2 style="color: #16a34a; margin-top: 0;">Check Your Inbox!</h2>' + '<p style="color: #334155; font-size: 16px; font-weight: 600;">Your quiz was submitted.</p>' + '<p style="color: #64748b; font-size: 14px;">Your score and free AI safety guide should arrive by email shortly. If you do not see it, check Spam, Promotions, or Updates.</p>'; })
+      .catch(function(error) { document.getElementById("quiz-content").innerHTML = '<h2 style="color: #dc2626; margin-top: 0;">Something went wrong</h2><p>Please refresh the page and try again.</p>'; });
     }
   </script>
 </body>
